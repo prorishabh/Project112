@@ -1,0 +1,294 @@
+<html>
+ <head>
+  <title>Real Time Image Identification App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+ </head>
+
+ <body>
+  <span> CASE STUDTY
+    <img id="gif" src="giphy.gif">
+  </span>
+  <hr>
+    <ol>
+      <div class="test_image_and_result">
+        <li>
+          <b>Test Image -</b>
+          <img src="Choclate.jpg" class="img-responsive">
+        </li>
+
+        <h5>
+          Output on<b> Microsoft Azure</b>-
+          <span>Undefined</span>
+        </h5>
+
+        <h5>
+          Output on<b> Mobilenet Model</b>-
+          <span>Milk</span>
+        </h5>
+
+        <div class="bob3">
+          <h4>Result -</h4>
+          <hr>
+          <h4>Mobilenet Model Is More Accurcate</h4>
+        </div>
+
+      </div>
+
+      <hr>
+
+      <div class="test_image_and_result">
+        <li>
+          <b>Test Image -</b>
+          <img src="Cube.jpg" class="img-responsive">
+        </li>
+
+        <h5>
+          Output on<b> Microsoft Azure</b>-
+          <span>A Flat Screen Telvision</span>
+        </h5>
+
+        <h5>
+          Output on<b> Mobilenet Model</b>-
+          <span>Box</span>
+        </h5>
+
+        <div class="bob3">
+          <h4>Result -</h4>
+          <hr>
+          <h4>Mobilenet Model Is More Accurcate</h4>
+        </div>
+
+      </div>
+
+      <hr>
+
+      <div class="test_image_and_result">
+        <li>
+          <b>Test Image -</b>
+          <img src="Football.jpg" class="img-responsive">
+        </li>
+
+        <h5>
+          Output on<b> Microsoft Azure</b>-
+          <span>A Flat Screen Telvision</span>
+        </h5>
+
+        <h5>
+          Output on<b> Mobilenet Model</b>-
+          <span>Football</span>
+        </h5>
+
+        <div class="bob3">
+          <h4>Result -</h4>
+          <hr>
+          <h4>Mobilenet Model Is More Accurcate</h4>
+        </div>
+
+      </div>
+
+      <hr>
+
+      <div class="test_image_and_result">
+        <li>
+          <b>Test Image -</b>
+          <img src="Hanger.jpg" class="img-responsive">
+        </li>
+
+        <h5>
+          Output on<b> Microsoft Azure</b>-
+          <span>Chart</span>
+        </h5>
+
+        <h5>
+          Output on<b> Mobilenet Model</b>-
+          <span>Stick</span>
+        </h5>
+
+        <div class="bob3">
+          <h4>Result -</h4>
+          <hr>
+          <h4>Mobilenet Model Is More Accurcate</h4>
+        </div>
+
+      </div>
+
+      <hr>
+
+      <div class="test_image_and_result">
+        <li>
+          <b>Test Image -</b>
+          <img src="Headphone.jpg" class="img-responsive">
+        </li>
+
+        <h5>
+          Output on<b> Microsoft Azure</b>-
+          <span>A Flat Screen Telvision</span>
+        </h5>
+
+        <h5>
+          Output on<b> Mobilenet Model</b>-
+          <span>Muzzle</span>
+        </h5>
+
+        <div class="bob3">
+          <h4>Result -</h4>
+          <hr>
+          <h4>Mobilenet Model Is More Accurcate</h4>
+        </div>
+
+      </div>
+
+      <hr>
+
+      <div class="test_image_and_result">
+        <li>
+          <b>Test Image -</b>
+          <img src="Mobilewatch.jpg" class="img-responsive">
+        </li>
+
+        <h5>
+          Output on<b> Microsoft Azure</b>-
+          <span>A Close Up Of A Screen</span>
+        </h5>
+
+        <h5>
+          Output on<b> Mobilenet Model</b>-
+          <span>Watch</span>
+        </h5>
+
+        <div class="bob3">
+          <h4>Result -</h4>
+          <hr>
+          <h4>Mobilenet Model Is More Accurcate</h4>
+        </div>
+
+      </div>
+
+      <hr>
+
+      <div class="test_image_and_result">
+        <li>
+          <b>Test Image -</b>
+          <img src="Mouse.jpg" class="img-responsive">
+        </li>
+
+        <h5>
+          Output on<b> Microsoft Azure</b>-
+          <span>A Close Up Of A Screen</span>
+        </h5>
+
+        <h5>
+          Output on<b> Mobilenet Model</b>-
+          <span>Mouse</span>
+        </h5>
+
+        <div class="bob3">
+          <h4>Result -</h4>
+          <hr>
+          <h4>Mobilenet Model Is More Accurcate</h4>
+        </div>
+
+      </div>
+
+      <hr>
+
+      <div class="test_image_and_result">
+        <li>
+          <b>Test Image -</b>
+          <img src="Pouch.jpg" class="img-responsive">
+        </li>
+
+        <h5>
+          Output on<b> Microsoft Azure</b>-
+          <span>Graphical User Interface</span>
+        </h5>
+
+        <h5>
+          Output on<b> Mobilenet Model</b>-
+          <span>rectangle box</span>
+        </h5>
+
+        <div class="bob3">
+          <h4>Result -</h4>
+          <hr>
+          <h4>Mobilenet Model Is More Accurcate</h4>
+        </div>
+
+      </div>
+
+      <hr>
+
+      <div class="test_image_and_result">
+        <li>
+          <b>Test Image -</b>
+          <img src="Spoon.jpg" class="img-responsive">
+        </li>
+
+        <h5>
+          Output on<b> Microsoft Azure</b>-
+          <span>A Close Up Of A Device</span>
+        </h5>
+
+        <h5>
+          Output on<b> Mobilenet Model</b>-
+          <span>Spoon</span>
+        </h5>
+
+        <div class="bob3">
+          <h4>Result -</h4>
+          <hr>
+          <h4>Mobilenet Model Is More Accurcate</h4>
+        </div>
+
+      </div>
+
+      <hr>
+
+      <div class="test_image_and_result">
+        <li>
+          <b>Test Image -</b>
+          <img src="Water_bottle.jpg" class="img-responsive">
+        </li>
+
+        <h5>
+          Output on<b> Microsoft Azure</b>-
+          <span>A Screen Of A Computer</span>
+        </h5>
+
+        <h5>
+          Output on<b> Mobilenet Model</b>-
+          <span>Bottle</span>
+        </h5>
+
+        <div class="bob3">
+          <h4>Result -</h4>
+          <hr>
+          <h4>Mobilenet Model Is More Accurcate</h4>
+        </div>
+
+      </div>
+    </ol>
+
+    <br>
+    <h6>
+      I Have Tested 10 Images<br>
+      <b>Microsoft Azure</b> Have Predicted 0 of them Was Less Accurately.<br> 
+      And <b>MOBILENET</b> Was Correctly Accurately.<br> 
+      So According To my Case Sudy <b>Mobilenet</b> is More Accurate
+    </h6>
+
+    <br>
+    <br>
+
+    <div class="footer">Devleoped by Rishabh</div>
+
+ </body>
+</html>
